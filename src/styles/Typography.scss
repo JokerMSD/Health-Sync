@@ -1,0 +1,80 @@
+@import url("/src/styles/GlobalStyles.scss");
+
+.title {
+  font-size: 2.375rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 3rem;
+
+  &.two {
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.125rem;
+  }
+
+  &.three {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.875rem;
+  }
+
+  &.four {
+    font-size: 0.95rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.625rem;
+  }
+
+  &.tbody {
+    color: var(--grey-3);
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.375rem;
+  }
+
+  &.Headline {
+    color: var(--grey-3);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.625rem;
+  }
+
+  &.pline {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 1.625rem;
+  }
+}
+.title1 {
+  font-family: "inter";
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+.title2 {
+  font-family: "inter";
+  font-size: 1rem;
+  font-weight: bold;
+}
+.title3 {
+  font-family: "inter";
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+.headline {
+  font-family: "inter";
+  font-size: 0.75rem;
+}
+.headlineBold {
+  font-family: "inter";
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+.paragraph {
+  font-family: "inter";
+  font-size: 1rem;
+}
