@@ -1,4 +1,4 @@
-import { createContext } from "react";
+import { createContext, useEffect, useState } from "react";
 
 const DarkModeContext = createContext({});
 
@@ -12,7 +12,7 @@ const DarkModeProvider = ({ children }) => {
     localStorage.setItem("darkMode", JSON.stringify(darkMode));
   }, [darkMode]);
 
-  const handleDarkMode = () => {
+  const handleDarkMode = () =>  {
     setDarkMode(!darkMode);
   };
 
@@ -25,14 +25,13 @@ const DarkModeProvider = ({ children }) => {
   }, [darkMode]);
 
   return (
-    <DarkModeContext.Provider value={
-        { 
+    <DarkModeContext.Provider
+      value={{
         darkMode,
-        handleDarkMode 
-        }}>
-
+        handleDarkMode,
+      }}
+    >
       {children}
-      
     </DarkModeContext.Provider>
   );
 };
