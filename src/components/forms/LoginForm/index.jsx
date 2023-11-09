@@ -17,6 +17,7 @@ export const LoginForm = () => {
       onSubmit={loginHandleSubmit(submitLogin)}
       className={Style.loginFormContainer}
     >
+      <div className={Style.inputDiv}>
       <Input
         className={Style.inputLogin}
         type="email"
@@ -41,8 +42,25 @@ export const LoginForm = () => {
         {...loginRegister("password")}
       />
 
-      <button disabled={loading} className={Style.loginBtn} type="submit">
-        Entrar
+      <div className={Style.checkBoxContainer}>
+        <input 
+        className={Style.checkBox} 
+        id="remember" 
+        type="checkbox" 
+        />
+        <label 
+        className={Style.checkBoxLabel}
+        htmlFor="remember"
+        >Entrar automaticamente</label>
+      </div>
+
+      </div>
+
+      <button 
+      className={Style.loginBtn}
+      disabled={loading} 
+      type="submit"
+      >Entrar
       </button>
     </form>
   );
