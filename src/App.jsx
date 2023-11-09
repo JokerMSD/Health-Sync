@@ -1,18 +1,18 @@
-import { LandingPage } from "./pages/LandingPage/LandingPage";
 import { DarkModeProvider } from "./providers/DarkModeContext";
 import { PasswordProvider } from "./providers/PasswordStateContext";
 import { UserProvider } from "./providers/UserStateContext";
+import { RouterMain } from "./routes/index";
 
 function App() {
   return (
     <>
-      <DarkModeProvider>
-        <UserProvider>
+      <UserProvider>
+        <DarkModeProvider>
           <PasswordProvider>
-            <LandingPage />
+            <RouterMain />
           </PasswordProvider>
-        </UserProvider>
-      </DarkModeProvider>
+        </DarkModeProvider>
+      </UserProvider>
     </>
   );
 }
