@@ -11,10 +11,9 @@
 }
 
 .error {
-  @extend .headline;
-  color: var(--wrong-cred);
-  margin-top: 0.5rem;
-  margin-left: 0.2rem;
+  @extend .paragraph;
+  color: var(--brand-red);
+  margin-left: 1.5rem;
 }
 
 .inputContainer {
